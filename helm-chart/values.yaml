@@ -6,16 +6,11 @@ webapp:
   path: #URL_PATH
   tls:
     fqdn: #FQDN
-    secretName: incommon-cert-#HOST
+    secretName: incommon-cert-#APP_NAME
   volume1:
     name: #VOL1_NAME
     server: #VOL1_SERVER
     path: #VOL1_PATH
-    readOnly: true
-  volume2:
-    name: #VOL2_NAME
-    server: #VOL2_SERVER
-    path: #VOL2_PATH
     readOnly: true
   container: 
     image: #IMAGE_NAME
